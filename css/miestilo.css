@@ -1,0 +1,241 @@
+/* codigo de los botones en el mapa*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: ##282828;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 0;
+}
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.80;
+  border-radius: 50%;
+  position: absolute;
+  left: 70px;
+  top: 28px;
+  z-index: 1;
+}
+#btn2{
+
+	position: absolute;
+  left: 100px;
+  top: 25px;
+  z-index: 1;
+}
+.logo{
+	width: auto;
+	height: auto;
+	position: absolute;
+  left: 130px;
+  top: 25px;
+  z-index: 1;
+}
+.search{
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.90;
+  position: absolute;
+  left: 35px;
+  bottom: 65px;
+  z-index: 1;
+  border-radius:12px; 
+}
+/*codigo para el index*/
+#logoportada{
+  max-width: auto;
+  max-height: 80px;
+  left: 130px;
+  top: 115px;
+}
+
+#fondo{
+	background-image: url(../img/YGHD1QZ.jpg);
+	height: 650px;
+}
+#login{
+	width: 100px;
+	height: 50px;
+	background-color: #FF00BF;
+	border-radius: 8px;
+	margin-top: 550px;
+	color: grey;	
+}
+.retorno{
+	float: left;
+  margin-left: 5px;
+}
+.iconret{
+  color: #BFBDBD
+}
+.foto-perfil{
+  position: relative;
+  left: 35px;
+}
+.valida{
+  width: 100%;
+  background-color: #ff00b3;
+  border: none;
+  height: 40px;
+  margin-left: 8px;
+  margin-top: 20px;
+}
+.valida2{
+  width: 100%;
+  background-color: #ff00b3;
+  border: none;
+  height: 40px;
+  margin-top: 30px ;
+}
+#demo{
+  height: 40px;
+}
+#signin{
+	width: 100px;
+	height: 50px;
+	background-color: #FF00BF;
+	border-radius: 8px;
+	margin-top: 550px;	
+}
+a{
+  text-decoration:none;
+  color: white;
+  font-weight: bold;
+}
+.atl{
+  text-align: center;
+}
+.atl2{
+  font-size: 10px;
+  margin-top: -8px;
+}
+/*para los perfiles de ususario*/
+.chkbox{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.profile-userpic{
+	font-size: 48px;
+	margin-left: 45px;
+	margin-top: 36px;
+}
+.titlogo{
+  position: relative;
+  left: -75px;
+  top: 40px;
+}
+.logo2{
+  position: relative;
+  left: 50px;
+
+}
+.profile-userpic a{
+	margin-left: -28px;
+}
+.titulo{
+	text-align: center;
+}
+.profile-usermenu{
+	font-size: 14px;
+	margin-left: 30px;
+}
+#cinta{
+	height: 40px;
+	width: auto;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+/*para quitar efecto de los href*/
+a:link {   
+ text-decoration:none; 
+} 
+/*codigp para el mapa*/
+#map{
+	width: 100%;
+	height: 680px;
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  z-index: 0;
+}
+/* boton del mapa*/
+#viaje{
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.90;
+  position: absolute;
+  border-radius:12px; 
+  bottom: 15px;
+  z-index: 1;
+  left: 35px;
+}
+
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+    top: 10px;
+}
+.nomtop{
+  margin-bottom: 10px;
+}
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  10px;}
+.right-addon .glyphicon { right: 5px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/*MEDIA QUERY PARA SIDEBAR PROFILE*/
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 14px;}
+}

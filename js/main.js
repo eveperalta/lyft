@@ -59,5 +59,15 @@ function showPosition(position) {
 
     document.getElementById("map").innerHTML = "<img src='"+img_url+"'>";
 }
-
- 
+/*prueba funciones para mostrar y ocultar los input del mapa
+$(document).ready(function(){
+        $("#mostrar").on( "click", function() {
+            $('.viaje').show(); 
+            $('.search').show(); //muestro mediante clase
+         });
+        $("#ocultar").on( "click", function() {
+            $('.viaje').hide(); 
+            $('.search').hide(); //muestro mediante clase
+        });
+    }); 
+ */

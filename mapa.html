@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
   	<link rel="stylesheet" href="css/miestilo.css">
-  	<!--<link rel="stylesheet" href="build/css/demo.css">-->
   	<link href='https://fonts.googleapis.com/css?family=Montserrat:700,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -57,25 +56,27 @@
 			<a href="#" class="btn btn-default btn-circle btn-md" id="btn2"><i class="glyphicon glyphicon-gift"></i></a>
 		</div>	
 	</div>
-</div>
-	
+</div>	
 </header>
+<div id="map" class="col-xs-12 col-sm-12 col-md-12"></div>
 <section>
 	<div class="container"><!--AQUI COMIENZA EL MAPA!!!! FALTA AGREGAR BOTON Y WIDGET DEL USUARIO -->
 	  <div class="row">
-		<div class="col-xs-12 col-sm-12 col-md-12">
-			<div id="map"></div>
-			<input type="text" class="search" placeholder ="Mi Ubicacion">		
+		<div >
+			<input type="text" class="search" placeholder ="Mi Ubicacion"/>
 			<button type="button" class="btn btn-primary btn-md viaje" >Set pick Up</button>
 		</div>
 	  </div>
 	</div>
 </section>
 
-	<script type='text/javascript' src='jq/jquery-3.1.1.js'></script>
-    <script type='text/javascript' src='js/main.js'></script> 
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-Dn1AroBDY1PNgMylQxhfPWls3jERFI8&callback=myMap"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbDLXDiRtSb3fAt79f9htB2tjHIHwGOBg"></script>
+  	<script type='text/javascript' src='js/map.js'></script>
+  	<script type='text/javascript' src='js/main.js'></script>
+	
+	
 	
 </body>
 </html>

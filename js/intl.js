@@ -1,0 +1,1 @@
+$("#demo").intlTelInput();/* codigo para activar las banderas en el input tel del sign up*/

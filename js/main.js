@@ -1,4 +1,33 @@
 $("#demo").intlTelInput();/* codigo para activar las banderas en el input tel del sign up*/
+/*validacion inputs login*/
+
+function validaCampos(input){
+    // Expresion regular para validar el correo
+    var correo = /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
+    var pwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+    var bool = true;
+    // Se utiliza la funcion test() nativa de JavaScript
+    if (correo.test($('#email').val().trim())) {
+        return bool
+    }else{
+        if(pwd.test($("#password").val().trim())) {
+            return bool 
+        } else {
+            alert('Complete los campos obligatorios');
+        }
+    }
+};
+$('.valida2').on('click',function(event) {
+ event.preventDefault();
+    if(validaCampos() == true){
+        $(".valida2").unbind(event);
+        console.log("OK")
+    }else{
+        console.log("check your code")
+    }
+});
+/*_______________________fin codigo validacion log in__________________*/
+
 
 /*aqui el codigo para los botones del navbar en el mapa*/
 
@@ -27,38 +56,7 @@ function closeNav() {
 };
 
 
-/* todas las funciones del mapa*/
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(-33.448412, -70.671136), 
-    zoom: 10
-  }
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-}
 
-    google.maps.event.addDomListener(window, 'load', initMap);
-
-
-var x = document.getElementById("map");
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-};
-function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude; 
-}
-function showPosition(position) {
-    var latlon = position.coords.latitude + "," + position.coords.longitude;
-
-    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center= "+latlon+"&zoom=14&size=400x300&sensor=false";
-
-    document.getElementById("map").innerHTML = "<img src='"+img_url+"'>";
-}
 /*prueba funciones para mostrar y ocultar los input del mapa
 $(document).ready(function(){
         $("#mostrar").on( "click", function() {

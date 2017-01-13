@@ -23,24 +23,28 @@
 </header>
 	<section>
 	  <div class="container">
-		<div class="form" id="login2"><!-- aqui es el formulario de log in tiene display none este perfecto--> 	
-		  <form action="/" method="post">
+		<div class="form"><!-- aqui es el formulario de log in tiene display none este perfecto--> 	
+		  <form>
 		  <hr width="100%" align="center" margin-top="50px">
-	           	<label>Email<span class="req">*</span></label>
-			    <input type="email" class="form-control" required autocomplete="off"/>
-	          	<label>Contraseña<span class="req">*</span></label>
-				<input type="password" class="form-control" required autocomplete="off"/>
-				         
+	        <div class="input-group email">
+    			<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    			<input id="email" type="text" class="form-control" name="email" placeholder="Email" required>
+  			</div>
+	        <div class="input-group password">
+    			<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+   				<input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+  			</div>  	       
 		        <p class="forgot"><a href="#">Olvido su contraseña?</a><p> 
-		        <button type="submit" class="button button-block valida2"/><a href="mapa.html">Log In</a></button>
+		        <button type="submit" class="btn btn-block valida2"/>
+		        	<a href="mapa.html">Log In</a>
+		        </button>
 		    </form>
 		  </div>
 		</div>
 	</section>
-	<script type='text/javascript' src='jq/jquery-3.1.1.js'></script>
-    <script type='text/javascript' src='js/main.js'></script>
-   <!-- <script src="inttl/build/js/intlTelInput.min.js"></script>
-	<script src="inttl/build/js/intlTelInput.js"></script> -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.js"></script>
+  	<script type='text/javascript' src='js/main.js'></script>
+	
 </body>
 </html>

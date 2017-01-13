@@ -1,7 +1,50 @@
+/*botones index*/
+.btn-default{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  position: relative;
+  left: 50px;
+  bottom: -670px;
+}
+.btn-default a{
+  color: #252424;
+}
+.fondo{
+  background-image: url(../img/portada.jpg);
+  height: 750px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*hasta aqui index ok*/
+/*login*/
+.retorno{
+  float: left;
+  margin-left: 3px;
+  margin-top: -7px;
+}
+.iconret{
+  color: #BFBDBD;
+}
+.email, .password{
+  margin-bottom: 5px;
+}
+.valida2{
+  width: 100%;
+  background-color: #ff00b3;
+  border: none;
+  height: 30px;
+  margin-top: 20px;
+}
+.forgot a{
+  color: #2B2A2A;
+  padding: 5px;
+}
 /* codigo de los botones en el mapa*/
 
 .sidenav {
-    height: 75%;
+
     width: 0;
     position: fixed;
     z-index: 1;
@@ -66,45 +109,44 @@
   top: 25px;
   z-index: 1;
 }
+#map{
+  width: 100%;
+  height: 700px;
+  left: 0px;
+  top: 0px;
+  padding: 0;
+  margin:0;
+  position: fixed;
+  z-index: 0;
+}
+/* boton del mapa*/
+.viaje{
+  width: 80%;
+  height: 30px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.50;
+  position: absolute;
+  border-radius:12px; 
+  bottom: -18px;
+  z-index: 1;
+  left: 35px;
+}
 .search{
   width: 80%;
-  height: 40px;
+  height: 30px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.90;
   position: absolute;
   left: 35px;
-  bottom: 65px;
+  bottom: 15px;
   z-index: 1;
   border-radius:12px; 
 }
-/*codigo para el index*/
-#logoportada{
-  max-width: auto;
-  max-height: 80px;
-  left: 130px;
-  top: 115px;
-}
 
-#fondo{
-	background-image: url(../img/YGHD1QZ.jpg);
-	height: 650px;
-}
-#login{
-	width: 100px;
-	height: 50px;
-	background-color: #FF00BF;
-	border-radius: 8px;
-	margin-top: 550px;
-	color: grey;	
-}
-.retorno{
-	float: left;
-  margin-left: 5px;
-}
-.iconret{
-  color: #BFBDBD
-}
+
+
 .foto-perfil{
   position: relative;
   left: 35px;
@@ -117,16 +159,9 @@
   background-color: #ff00b3;
   border: none;
   height: 40px;
-  margin-left: 8px;
   margin-top: 20px;
 }
-.valida2{
-  width: 100%;
-  background-color: #ff00b3;
-  border: none;
-  height: 40px;
-  margin-top: 30px ;
-}
+
 #demo{
   height: 40px;
 }
@@ -144,7 +179,10 @@ a{
 }
 .atl{
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 .atl2{
   font-size: 10px;
   margin-top: -8px;
@@ -183,36 +221,11 @@ a{
 	height: 40px;
 	width: auto;
 	display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
-/*para quitar efecto de los href*/
-a:link {   
- text-decoration:none; 
-} 
-/*codigp para el mapa*/
-#map{
-	width: 100%;
-	height: 680px;
-  left: 0px;
-  top: 0px;
-  position: fixed;
-  z-index: 0;
-}
-/* boton del mapa*/
-.viaje{
-  width: 80%;
-  height: 40px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.90;
-  position: absolute;
-  border-radius:12px; 
-  bottom: 15px;
-  z-index: 1;
-  left: 35px;
-}
+
 
 /* enable absolute positioning */
 .inner-addon { 
